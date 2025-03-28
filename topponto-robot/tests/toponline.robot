@@ -51,5 +51,6 @@ Deve registrar ponto retroativo
     Verificar registro
 
 Retirar regra de justificativa
+    [Tags]                                no_teardown
     Fluxo de justificativa                Teste 2
 
