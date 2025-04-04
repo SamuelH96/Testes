@@ -1,0 +1,13 @@
+adb shell dumpsys window | grep mCurrentFocus - para encontrar os capabilities do aplicativo
+
+netstat -ano | findstr 4723 - Encontrar pid doprocesso que impede o servidor appium de iniciar
+taskkill /PID 12345 /F - comando para finalizar processo
+
+adb kill-server  - Mata o processo ADB
+adb start-server  - Reinicia limpo
+
+# Teste 1
+robot --output output_1.xml --log log_1.html --report report_1.html teste_suite_1.robot
+
+# Teste 2 (em paralelo, em outro terminal ou processo)
+robot --output output_2.xml --log log_2.html --report report_2.html teste_suite_2.robot
