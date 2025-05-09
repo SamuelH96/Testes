@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-05-09T16:51:29.927382" rpa="false" schemaversion="5">
+<suite id="s1" name="Regressão Entrega" source="C:\QA\projects\Desktop\TopFood-robot\Tests\regressão_entrega.robot">
+<kw name="Iniciar Sessão" owner="base" type="SETUP">
+<kw name="Contabilizar Elements" owner="base">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>C:\\QA\\projects\\Desktop\\TopFood-robot\\Resource\\elements</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2025-05-09T16:51:33.908712" elapsed="0.030685"/>
+</kw>
+<status status="PASS" start="2025-05-09T16:51:33.907661" elapsed="0.031962"/>
+</kw>
+<kw name="Set Min Similarity" owner="SikuliLibrary">
+<arg>0.60</arg>
+<doc>Set min similarity (accuracy of matching elements).</doc>
+<status status="PASS" start="2025-05-09T16:51:33.939864" elapsed="0.003754"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:35.148308" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820294392.png'/&gt;
+[log] CLICK on L[23,751]@S(0) (561 msec)</msg>
+<arg>iniciar.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:51:33.943878" elapsed="1.204573"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:36.635312" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820295801.png'/&gt;
+[log] CLICK on L[373,430]@S(0) (530 msec)</msg>
+<arg>top.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:51:35.148765" elapsed="1.486684"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-09T16:51:41.637197" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-09T16:51:36.635720" elapsed="5.001617"/>
+</kw>
+<status status="PASS" start="2025-05-09T16:51:33.907101" elapsed="7.730389"/>
+</kw>
+<test id="s1-t1" name="Deve realizar uma entrega" line="11">
+<kw name="Entrar com usuário Top" owner="login">
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:41.954643" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820301947.png'/&gt;</msg>
+<arg>senha.png</arg>
+<arg>15</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="PASS" start="2025-05-09T16:51:41.639006" elapsed="0.315764"/>
+</kw>
+<kw name="Input Text" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:43.311674" level="INFO">Input Text:
+123</msg>
+<msg time="2025-05-09T16:51:43.311697" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820302259.png'/&gt;
+[log] CLICK on L[786,357]@S(0) (534 msec)
+[log]  TYPE "123"</msg>
+<arg>senha.png</arg>
+<arg>${senha}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="PASS" start="2025-05-09T16:51:41.955074" elapsed="1.356795"/>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:43.537497" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820303531.png'/&gt;</msg>
+<arg>usuario.png</arg>
+<arg>5</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="PASS" start="2025-05-09T16:51:43.312137" elapsed="0.225501"/>
+</kw>
+<kw name="Double Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:44.584866" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820303764.png'/&gt;
+[log] DOUBLE CLICK on L[565,358]@S(0) (597 msec)</msg>
+<arg>usuario.png</arg>
+<doc>Double click</doc>
+<status status="PASS" start="2025-05-09T16:51:43.537988" elapsed="1.047028"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:44.662607" level="INFO">[log]  TYPE "#DEL."</msg>
+<arg>DELETE</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:51:44.585373" elapsed="0.077358"/>
+</kw>
+<kw name="Input Text" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:45.632764" level="INFO">Input Text:
+balanca</msg>
+<msg time="2025-05-09T16:51:45.632792" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820304927.png'/&gt;
+[log] CLICK on L[565,358]@S(0) (30 msec)
+[log]  TYPE "balanca"</msg>
+<arg>usuario.png</arg>
+<arg>${usuario}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="PASS" start="2025-05-09T16:51:44.662987" elapsed="0.969979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-09T16:51:46.633907" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-09T16:51:45.633247" elapsed="1.000813"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:47.625371" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820306872.png'/&gt;
+[log] CLICK on L[844,412]@S(0) (543 msec)</msg>
+<arg>entrar.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:51:46.634300" elapsed="0.991195"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-09T16:51:52.626332" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-09T16:51:47.625783" elapsed="5.000709"/>
+</kw>
+<kw name="Verificar tela food" owner="login">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:57.862557" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820317752.png'/&gt;</msg>
+<msg time="2025-05-09T16:51:57.862768" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(tela_food.png) S: 0.6000000238418579</msg>
+<arg>tela_food.png</arg>
+<arg>5</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="FAIL" start="2025-05-09T16:51:52.627967" elapsed="5.234882">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(tela_food.png) S: 0.6000000238418579</status>
+</kw>
+<msg time="2025-05-09T16:51:57.863075" level="INFO">${tela_visivel} = False</msg>
+<var>${tela_visivel}</var>
+<arg>Wait Until Screen Contain</arg>
+<arg>tela_food.png</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-05-09T16:51:52.627510" elapsed="5.235851"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-09T16:51:57.865083" level="INFO">Tela de informação não encontrada - Prosseguindo</msg>
+<arg>Tela de informação não encontrada - Prosseguindo</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-09T16:51:57.864238" elapsed="0.000938"/>
+</kw>
+<arg>${tela_visivel}</arg>
+<arg>Clicar</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>Tela de informação não encontrada - Prosseguindo</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-09T16:51:57.863631" elapsed="0.001663"/>
+</kw>
+<status status="PASS" start="2025-05-09T16:51:52.626813" elapsed="5.238613"/>
+</kw>
+<arg>usuario=balanca</arg>
+<arg>senha=123</arg>
+<status status="PASS" start="2025-05-09T16:51:41.638395" elapsed="16.227131"/>
+</kw>
+<kw name="Menu" owner="login">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:51:58.760867" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820318053.png'/&gt;
+[log] CLICK on L[21,17]@S(0) (537 msec)</msg>
+<arg>menu.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:51:57.866608" elapsed="0.894389"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:00.325634" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820319627.png'/&gt;
+[log] CLICK on L[129,339]@S(0) (547 msec)</msg>
+<arg>${categoria1}</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:51:58.761243" elapsed="1.564829"/>
+</kw>
+<arg>Food</arg>
+<status status="PASS" start="2025-05-09T16:51:57.865971" elapsed="2.460272"/>
+</kw>
+<kw name="Realizar Tele Entrega" owner="keywords_entrega">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:01.552546" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820320836.png'/&gt;
+[log] CLICK on L[150,588]@S(0) (544 msec)</msg>
+<arg>tele_entrega.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:00.327430" elapsed="1.225254"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-09T16:52:03.553580" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-09T16:52:01.552938" elapsed="2.000794"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:04.520537" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820323770.png'/&gt;
+[log] CLICK on L[1111,612]@S(0) (536 msec)</msg>
+<arg>novo_pedido.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:03.553977" elapsed="0.968449"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:04.595939" level="INFO">[log]  TYPE "#UP."</msg>
+<arg>UP</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:04.522891" elapsed="0.073209"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:04.657440" level="INFO">[log]  TYPE "#UP."</msg>
+<arg>UP</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:04.596364" elapsed="0.061197"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:04.729366" level="INFO">[log]  TYPE "#ENTER."</msg>
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:04.657821" elapsed="0.071665"/>
+</kw>
+<status status="PASS" start="2025-05-09T16:52:00.326779" elapsed="4.403187"/>
+</kw>
+<kw name="Fluxo Pedido" owner="keywords_entrega">
+<kw name="Filtrar item" owner="keywords_pedido">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:06.977939" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820326259.png'/&gt;
+[log] CLICK on L[659,139]@S(0) (549 msec)</msg>
+<arg>filtrar_item.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:04.734341" elapsed="2.243726"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-09T16:52:16.979108" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-09T16:52:06.978317" elapsed="10.000944"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:17.899606" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820337183.png'/&gt;
+[log] CLICK on L[1021,240]@S(0) (550 msec)</msg>
+<arg>buscar_item.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:16.979508" elapsed="0.920220"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:17.970860" level="INFO">[log]  TYPE "#DOWN."</msg>
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:17.900003" elapsed="0.071014"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:18.979485" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820338145.png'/&gt;
+[log] CLICK on L[25,748]@S(0) (576 msec)</msg>
+<arg>marcador.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:17.971270" elapsed="1.008336"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:19.060844" level="INFO">[log]  TYPE "#F12."</msg>
+<arg>F12</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:18.979897" elapsed="0.081093"/>
+</kw>
+<kw name="Capture Screen" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:19.522814" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820339105.png'/&gt;</msg>
+<doc>Capture whole screen, file name is returned</doc>
+<status status="PASS" start="2025-05-09T16:52:19.061267" elapsed="0.461706"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:19.584394" level="INFO">[log]  TYPE "#F12."</msg>
+<arg>F12</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:19.523273" elapsed="0.061249"/>
+</kw>
+<status status="PASS" start="2025-05-09T16:52:04.733803" elapsed="14.850873"/>
+</kw>
+<kw name="Selecionar cliente" owner="keywords_pedido">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:20.528224" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820339788.png'/&gt;
+[log] CLICK on L[833,226]@S(0) (569 msec)</msg>
+<arg>cliente.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:19.585589" elapsed="0.942773"/>
+</kw>
+<kw name="Input Text" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:22.129891" level="INFO">Input Text:
+venda ao consumidor</msg>
+<msg time="2025-05-09T16:52:22.129912" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820340745.png'/&gt;
+[log] CLICK on L[833,226]@S(0) (29 msec)
+[log]  TYPE "venda ao consumidor"</msg>
+<arg>cliente.png</arg>
+<arg>${cliente}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="PASS" start="2025-05-09T16:52:20.528652" elapsed="1.601423"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:22.219492" level="INFO">[log]  TYPE "#DOWN."</msg>
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:22.130361" elapsed="0.089322"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-09T16:52:22.721082" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-09T16:52:22.219945" elapsed="0.501298"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:22.782867" level="INFO">[log]  TYPE "#ENTER."</msg>
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:22.721501" elapsed="0.061556"/>
+</kw>
+<kw name="Capture Screen" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:22.986842" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820342828.png'/&gt;</msg>
+<doc>Capture whole screen, file name is returned</doc>
+<status status="PASS" start="2025-05-09T16:52:22.783403" elapsed="0.203573"/>
+</kw>
+<arg>venda ao consumidor</arg>
+<status status="PASS" start="2025-05-09T16:52:19.584971" elapsed="3.402155"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:23.899536" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820343187.png'/&gt;
+[log] CLICK on L[1243,273]@S(0) (536 msec)</msg>
+<arg>taxa.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:22.987357" elapsed="0.912341"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:23.960460" level="INFO">[log]  TYPE "#DOWN."</msg>
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:23.899976" elapsed="0.060604"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:24.037689" level="INFO">[log]  TYPE "#ENTER."</msg>
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="PASS" start="2025-05-09T16:52:23.960840" elapsed="0.076975"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:25.002777" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820344256.png'/&gt;
+[log] CLICK on L[1242,275]@S(0) (541 msec)</msg>
+<arg>agendar.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-05-09T16:52:24.038234" elapsed="0.964669"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:28.238127" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1746820348078.png'/&gt;</msg>
+<msg time="2025-05-09T16:52:28.238339" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(data_agendamento.png) S: 0.6000000238418579</msg>
+<arg>data_agendamento.png</arg>
+<doc>Click</doc>
+<status status="FAIL" start="2025-05-09T16:52:25.003160" elapsed="3.235257">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(data_agendamento.png) S: 0.6000000238418579</status>
+</kw>
+<kw name="Input Text" owner="SikuliLibrary">
+<arg>data_agendamento.png</arg>
+<arg>${data}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.238701" elapsed="0.000247"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>hora_agendamento.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.239135" elapsed="0.000160"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.239480" elapsed="0.000159"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.239822" elapsed="0.000155"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.240156" elapsed="0.000159"/>
+</kw>
+<kw name="Press Special Key" owner="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.240497" elapsed="0.000151"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.240819" elapsed="0.000150"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>confirmar.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-05-09T16:52:28.241135" elapsed="0.000155"/>
+</kw>
+<kw name="Adicionar pagamento" owner="keywords_pedido">
+<arg>F2</arg>
+<status status="NOT RUN" start="2025-05-09T16:52:28.241537" elapsed="0.000159"/>
+</kw>
+<kw name="Verificar tela de entrega" owner="keywords_entrega">
+<status status="NOT RUN" start="2025-05-09T16:52:28.241893" elapsed="0.000161"/>
+</kw>
+<arg>30/05/2025</arg>
+<status status="FAIL" start="2025-05-09T16:52:04.732964" elapsed="23.509283">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(data_agendamento.png) S: 0.6000000238418579</status>
+</kw>
+<kw name="Verificar tela de entrega" owner="keywords_entrega">
+<status status="NOT RUN" start="2025-05-09T16:52:28.242701" elapsed="0.000195"/>
+</kw>
+<kw name="Validar entrega" owner="keywords_entrega">
+<arg>venda</arg>
+<status status="NOT RUN" start="2025-05-09T16:52:28.243290" elapsed="0.000179"/>
+</kw>
+<msg time="2025-05-09T16:52:28.270302" level="INFO">Starting Browser process C:\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 60993</msg>
+<msg time="2025-05-09T16:52:28.270471" level="INFO">Node startup parameters: ['node', 'C:\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '60993']</msg>
+<status status="FAIL" start="2025-05-09T16:51:41.637611" elapsed="46.606303">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(data_agendamento.png) S: 0.6000000238418579</status>
+</test>
+<kw name="Encerrar Sessão" owner="base" type="TEARDOWN">
+<kw name="Stop Remote Server" owner="SikuliLibrary">
+<msg time="2025-05-09T16:52:29.927770" level="INFO">Robot Framework remote server stopping</msg>
+<doc>Stops the remote server.</doc>
+<status status="PASS" start="2025-05-09T16:52:29.921757" elapsed="0.006175"/>
+</kw>
+<status status="PASS" start="2025-05-09T16:52:29.921273" elapsed="0.006811"/>
+</kw>
+<doc>Documento referente aos casos de Teste de Tele Entrega</doc>
+<status status="FAIL" start="2025-05-09T16:51:29.929577" elapsed="59.998593"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Regressão Entrega" id="s1" pass="0" fail="1" skip="0">Regressão Entrega</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
